@@ -1,0 +1,65 @@
+:root {
+ 
+  --primary-color: hsl(0, 0%, 100%);
+  --text-color: #ffffff;
+  --accent-color: #000000;
+  --bg-overlay: rgba(0, 0, 0, 0.42);
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0; /* Espacio arriba y abajo de la lista */
+}
+ul li a {
+  text-decoration: none;    /* Quita la línea de abajo */
+  color: #3d3d3d;           /* Un color gris oscuro elegante */
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;   /* Para que el cambio de color sea suave */
+}
+body {
+
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+
+  background: linear-gradient(var(--bg-overlay), var(--bg-overlay)), 
+              url('../imagenes/drake.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  
+}
+
+h1 {
+  color: var(--primary-color);
+  text-align: center; 
+  margin-bottom: 1.5rem;
+}
+
+.warning {
+  color: var(--accent-color);
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+input[type="text"] {
+  width: 100%; 
+  max-width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #9a51ac;
+}
+
